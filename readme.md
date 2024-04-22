@@ -52,9 +52,13 @@ Once configured and activated, the plugin will automatically delete the /wp-cont
 
 1. Install the plugin with 'hourly' setting
 2. Log into the file director in FTP to see the contents of /files/et-cache (there should be many #### folders in there)
-3A. Either wait for cron to run (every hour)
-3B. run `terminus wp your-site.your-test-enviroment cron event list` (Verify the cron is delete_et_cache_hook) is on the list then... 
-    run `terminus wp your-site.your-test-enviroment cron event run --due-now` and refresh your SFTP listing.
+3 Either wait for cron to run (every hour) 
+
+OR
+
+run `terminus wp your-site.your-test-enviroment cron event list` (Verify the cron is delete_et_cache_hook) is on the list then... 
+run `terminus wp your-site.your-test-enviroment cron event run --due-now` and refresh your SFTP listing.
+
 4. The many numbered directories in /files/et-cache should be delete
 5. Set the frequncy to a more reasonable 'weekly' or 'daily' setting
     
