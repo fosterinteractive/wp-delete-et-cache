@@ -52,7 +52,7 @@ Once configured and activated, the plugin will automatically delete the /wp-cont
 
 1. Install the plugin with 'hourly' setting
 2. Log into the file director in FTP to see the contents of /files/et-cache (there should be many #### folders in there)
-3 Either wait for cron to run (every hour) 
+3. Either wait for cron to run (every hour) 
 
 OR
 
