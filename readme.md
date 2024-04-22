@@ -17,6 +17,7 @@ Warning: hourly sets the cron to run "now". Pantheon runs it once an hour, but i
 Make sure you have a symlink in your git code for the /wp-content/et-cache as outlined in pantheon's docs https://docs.pantheon.io/symlinks-assumed-write-access#for-macos--linux
 
 `cd /wp-content`
+
 `ln -s ./uploads/et-cache ./et-cache`
 
 
@@ -68,7 +69,7 @@ Neither the authors nor the distributors of this plugin shall be liable for any 
 This plugin is open-source and freely distributable under the GPLv2 license.
 
 
-Author
+## Author
 
 Aidan Foster
 http://fosterinteractive.com
