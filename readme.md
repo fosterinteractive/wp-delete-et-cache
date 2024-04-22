@@ -56,7 +56,8 @@ Once configured and activated, the plugin will automatically delete the /wp-cont
 
 OR
 
-run `terminus wp your-site.your-test-enviroment cron event list` (Verify the cron is delete_et_cache_hook) is on the list then... 
+run `terminus wp your-site.your-test-enviroment cron event list` (Verify the cron is delete_et_cache_hook) is on the list then
+
 run `terminus wp your-site.your-test-enviroment cron event run --due-now` and refresh your SFTP listing.
 
 4. The many numbered directories in /files/et-cache should be delete
