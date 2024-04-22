@@ -21,15 +21,18 @@ Make sure you have a symlink in your git code for the /wp-content/et-cache as ou
 `ln -s ./uploads/et-cache ./et-cache`
 
 
-Upload Plugin: Download the delete-et-cache.zip file and extract it. Upload the delete-et-cache folder to the /wp-content/plugins/ directory on your WordPress site.
+Upload Plugin: 
+
+* Download the delete-et-cache.zip file and extract it. 
+* Upload the delete-et-cache folder to the /wp-content/plugins/ directory on your WordPress site.
 
 Activate Plugin: Navigate to the WordPress Dashboard > Plugins > Installed Plugins. Locate "Delete ET Cache" and click Activate.
 
 ## Configuration
 
-Copy and paste the following to your wp-config.php file below the /* That's all, stop editing! Happy Pressing. */ line:
+Copy and paste the following to your wp-config.php file below the `/* That's all, stop editing! Happy Pressing. */` line:
 
-
+```
 /** Deletes /et-cache folder directory to work around issues in pantheon's caching system and divi making 1000's of files. */
 
 // Enable the plugin's functionality
@@ -38,7 +41,7 @@ define('ENABLE_ET_CACHE_DELETION', true);
 // Options: 'hourly', 'daily', 'weekly' to delete all the files and folders in et-cache 
 // 3:00AM for daily, Sunday at 3:00AM for Weekly, hourly runs on every cron run (1hr by default on pantheon)
 define('ET_CACHE_DELETION_FREQUENCY', 'weekly');  
-
+```
 
 ## Usage
 
